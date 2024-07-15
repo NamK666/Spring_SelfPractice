@@ -8,5 +8,11 @@
 <h1>스프링부트 타임리프 홈페이지 테스트</h1>
 <p th:text="${name1}">메세지가 표시됩니다.</p>
 <p th:text="${name2}">메세지가 표시됩니다.</p>
+
+<div th:object="${user}">
+    <p>이름: <span th:text="*{username}"></span></p>
+    <p>이메일: <span th:text="*{email}"></span></p>
+</div>
+
 </body>
 </html>
