@@ -9,10 +9,9 @@
 <p th:text="${name1}">메세지가 표시됩니다.</p>
 <p th:text="${name2}">메세지가 표시됩니다.</p>
 
-<div th:object="${user}">
-    <p>이름: <span th:text="*{username}"></span></p>
-    <p>이메일: <span th:text="*{email}"></span></p>
-</div>
+<ul th:each="item : ${iterData}">
+    <li th:text="${item}"></li>
+</ul>
 
 </body>
 </html>

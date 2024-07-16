@@ -12,8 +12,8 @@
             model.addAttribute("name1", "어트리뷰트벨류값");
             model.addAttribute("name2","또 연습해보자");
 
-            User user = new User("draco", "draco@gmail.com",true);
-            model.addAttribute("user", user);
+            int[] iterData = {1,2,3,4,5};
+            model.addAttribute("iterData", iterData);
 
             return "index";
         }
