@@ -26,7 +26,7 @@ public class MemberController {
     }
 
     // id에 따른 멤버 조회
-    @GetMapping
+    @GetMapping("/{id}")
     public Member getMemberById(@PathVariable Long id){
         return members.stream()
                 .filter(member -> member.getId()==id)
